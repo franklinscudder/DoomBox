@@ -1,0 +1,51 @@
+Netlist
+
+Exported from DoomBoxMk1.sch at 29/03/2022 05:08
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Net      Part     Pad      Pin        Sheet
+
++9V      J_PWR    SLEEVE   SLEEVE     1
+         SW1      A2       2          1
+
++9V_SW   LED1     A        A          1
+         R2       1        1          1
+         SW1      A3       3          1
+
+FUZZ_OUT C2       -        -          1
+         D1       A        A          1
+         D2       C        C          1
+         POT1     3        3          1
+
+FX_OUT   POT1     2        2          1
+         SW1      B3       3          1
+
+GND      D1       C        C          1
+         D2       A        A          1
+         J_IN     SLEEVE   SLEEVE     1
+         J_OUT    SLEEVE   SLEEVE     1
+         J_PWR    PIN      PIN        1
+         POT1     1        1          1
+         Q1       1        E          1
+         R1       2        2          1
+
+IN_J     C1       +        +          1
+         J_IN     TIP      TIP        1
+         SW1      B1       1          1
+
+N$2      LED1     K        C          1
+         R1       1        1          1
+
+OUT_J    J_OUT    TIP      TIP        1
+         SW1      B2       2          1
+
+S5       C2       +        +          1
+         Q1       3        C          1
+         R2       2        2          1
+         R3       1        1          1
+
+S6       C1       -        -          1
+         Q1       2        B          1
+         R3       2        2          1
+
