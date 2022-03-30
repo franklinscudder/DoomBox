@@ -2848,6 +2848,53 @@ spacing: 4 holes (with body offset)
 <text x="-1.778" y="-0.635" size="1.27" layer="25" ratio="12">&gt;NAME</text>
 <text x="-1.524" y="-3.937" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
 </package>
+<package name="080_035">
+<description>&lt;b&gt;8mm diameter, 3.5 mm lead spacing&lt;/b&gt;
+&lt;p&gt;7mm height/length and more</description>
+<wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
+<pad name="+" x="-1.75" y="0" drill="0.7" shape="square"/>
+<pad name="-" x="1.75" y="0" drill="0.7"/>
+<text x="-1.524" y="-2.032" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-2.054" y="-3.44" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+<package name="080_035_1">
+<description>&lt;b&gt;8mm diameter, 3.5mm lead spacing, 0.1" pad spacing&lt;/b&gt;</description>
+<wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.7954" y2="0" width="0.6096" layer="51"/>
+<wire x1="1.77" y1="0" x2="1.2954" y2="0" width="0.6096" layer="51"/>
+<circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
+<pad name="+" x="-1.27" y="0" drill="0.7" shape="square"/>
+<pad name="-" x="1.27" y="0" drill="0.7"/>
+<text x="-1.524" y="-2.159" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-1.927" y="-3.567" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+<package name="080_035_2">
+<description>&lt;b&gt;8mm diameter, 3.5mm lead spacing, 0.2" pad spacing&lt;/b&gt;</description>
+<wire x1="-2.413" y1="1.6764" x2="-2.413" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-2.0828" y1="1.3716" x2="-2.7432" y2="1.3716" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.4304" y2="0" width="0.6096" layer="51"/>
+<wire x1="2.659" y1="0" x2="2.5654" y2="0" width="0.6096" layer="51"/>
+<circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
+<pad name="+" x="-2.54" y="0" drill="0.7" shape="square"/>
+<pad name="-" x="2.54" y="0" drill="0.7"/>
+<text x="-1.524" y="-0.635" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-1.8" y="-3.059" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+<package name="080_035_4">
+<description>&lt;b&gt;8mm diameter, 3.5mm lead spacing, 0.4" pad spacing&lt;/b&gt;</description>
+<wire x1="-4.953" y1="1.6764" x2="-4.953" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-4.6228" y1="1.3716" x2="-5.2832" y2="1.3716" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0" x2="-3.0654" y2="0" width="0.6096" layer="51"/>
+<wire x1="3.04" y1="0" x2="5.1054" y2="0" width="0.6096" layer="51"/>
+<circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
+<pad name="+" x="-5.08" y="0" drill="0.7" shape="square"/>
+<pad name="-" x="5.08" y="0" drill="0.7"/>
+<text x="-2.032" y="-0.635" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-1.8" y="-3.059" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CPOL">
@@ -2913,6 +2960,52 @@ spacing: 4 holes (with body offset)
 <connects>
 <connect gate="1" pin="+" pad="+"/>
 <connect gate="1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="080" prefix="C" uservalue="yes">
+<description>&lt;b&gt;47 - 470uF&lt;/b&gt;
+&lt;p&gt;Xicon values at Mouser.com&lt;br&gt;
+10V: 330, 470uF; 16V: 220, 330uF; 25V: 220uF; 50V: 47, 100uF</description>
+<gates>
+<gate name="G$1" symbol="CPOL" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="080_035">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1" package="080_035_1">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2" package="080_035_2">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4" package="080_035_4">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3456,6 +3549,8 @@ spacing: 4 holes (with body offset)
 <part name="C1" library="gm-caps-electro-pol" deviceset="050" device="1" value="2.2uF"/>
 <part name="C2" library="gm-caps-electro-pol" deviceset="050" device="1" value="2.2uF"/>
 <part name="POT1" library="gm-pots" deviceset="POT" device="S" value="A1M"/>
+<part name="R4" library="gm-resistors" deviceset="6MM" device=".3" value="50"/>
+<part name="C4" library="gm-caps-electro-pol" deviceset="080" device="2"/>
 </parts>
 <sheets>
 <sheet>
@@ -3519,6 +3614,14 @@ spacing: 4 holes (with body offset)
 <attribute name="NAME" x="83.82" y="73.66" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="86.36" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R4" gate="G$1" x="142.24" y="111.76" smashed="yes">
+<attribute name="NAME" x="138.43" y="113.2586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.43" y="108.458" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="147.32" y="104.14" smashed="yes">
+<attribute name="NAME" x="148.336" y="104.775" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.336" y="99.949" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3565,17 +3668,25 @@ spacing: 4 holes (with body offset)
 <wire x1="68.58" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <label x="71.12" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="147.32" y1="99.06" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
+<label x="147.32" y="96.52" size="1.778" layer="95" xref="yes"/>
+<pinref part="C4" gate="G$1" pin="-"/>
+</segment>
 </net>
 <net name="+9V" class="0">
-<segment>
-<wire x1="2.54" y1="83.82" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
-<label x="15.24" y="83.82" size="1.778" layer="95" xref="yes"/>
-<pinref part="J_PWR" gate="G$1" pin="SLEEVE"/>
-</segment>
 <segment>
 <wire x1="5.08" y1="58.42" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
 <label x="5.08" y="55.88" size="1.778" layer="95" xref="yes"/>
 <pinref part="SW1" gate="A" pin="2"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="111.76" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="111.76" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
+<junction x="147.32" y="111.76"/>
+<label x="154.94" y="111.76" size="1.778" layer="95" xref="yes"/>
+<pinref part="C4" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="+9V_SW" class="0">
@@ -3704,6 +3815,18 @@ spacing: 4 holes (with body offset)
 <pinref part="POT1" gate="G$1" pin="3"/>
 <wire x1="88.9" y1="83.82" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
 <label x="88.9" y="88.9" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="+9V_UNF" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="111.76" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
+<label x="134.62" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="2.54" y1="83.82" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
+<label x="15.24" y="83.82" size="1.778" layer="95" xref="yes"/>
+<pinref part="J_PWR" gate="G$1" pin="SLEEVE"/>
 </segment>
 </net>
 </nets>
